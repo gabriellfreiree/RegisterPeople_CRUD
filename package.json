@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "handlebars": "^4.7.8",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

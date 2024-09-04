@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/stylesheet/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-black1 text-white">
+ <header class="bg-orange  text-center py-4 flex justify-center items-center">
+        <img src="/img/LogoNav.png" alt="Logo e marketing do sistema" class="w-24 h-24 mr-4">
+        <nav class="flex justify-center space-x-4 mt-4">
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/Cadastrar" class="hover:underline">Cadastrar</a>
+            <a href="/Listar" class="hover:underline">Listar</a>
+            <a href="/QuemSomos" class="hover:underline">Quem Somos</a>
+            <a href="/Deslogar" class="hover:underline">Deslogar</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8 text-white">
+    <table class="bg-orange max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+         {{!-- <h2 class="text-2xl font-bold">Listar Pessoas</h2> --}}
+      <thead>
+        <tr>
+          <th scope="col" class="px-6 py-3">Nome</th>
+          <th scope="col" class="px-6 py-3">Idade</th>
+          <th scope="col" class="px-6 py-3">Sexo</th>
+          <th scope="col" class="px-6 py-3">CEP</th>
+          <th scope="col" class="px-6 py-3">Endereço</th>
+          <th scope="col" class="px-6 py-3">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-6 py-4">João da Silva</td>
+          <td class="px-6 py-4">30</td>
+          <td class="px-6 py-4">Masculino</td>
+          <td class="px-6 py-4">12345-678</td>
+          <td class="px-6 py-4">Av. José Carlos</td>
+          <td class="px-6 py-4">
+            <div class="flex space-x-1">
+                <a href="/" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Editar</a>
+                <a href="/" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Excluir</a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+    <footer class="bg-orange text-white text-center py-4">
+        <p class="text-white">®Desenvolvido para Estudo</p>
+    </footer>
+</body>
+</html>
