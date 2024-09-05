@@ -27,3 +27,7 @@ app.get('/cadastrar', function(req, res){
 app.get('/listar', function(req, res){
     res.render('listar')
 })
+
+app.get('/quemsomos', function(req, res){
+    res.render('quemsomos')
+})
