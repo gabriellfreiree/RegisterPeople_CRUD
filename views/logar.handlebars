@@ -1,47 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stylesheet/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body class="bg-black1 text-white">
- <header class="bg-orange  text-center py-4 flex justify-center items-center">
-        <img src="/img/LogoNav.png" alt="Logo e marketing do sistema" class="w-24 h-24 mr-4">
-        <nav class="flex justify-center space-x-4 mt-4">
-            <a href="/" class="hover:underline">Home</a>
-            <a href="/Cadastrar" class="hover:underline">Cadastrar</a>
-            <a href="/Listar" class="hover:underline">Listar</a>
-            <a href="/QuemSomos" class="hover:underline">Quem Somos</a>
-            <a href="/" class="hover:underline">Logar</a>
-        </nav>
-    </header>
-
-    <main class="container mx-auto py-8 text-white">
-        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md bg-orange">
-            <h1 class="text-2xl font-bold mb-6">Cadastro Pessoal</h1>
-            <form class="bg-range">
+<div class="max-w-md mx-auto p-6 rounded-lg shadow-md bg-orange">
+    <h1 class="text-2xl font-bold mb-6">Cadastro Pessoal</h1>
+    <form class="bg-range">
+        <div class="mb-4">
             <div class="mb-4">
-                <div class="mb-4">
                 {{!-- usuario --}}
                 <label for="usuario" class="block text-white">Usuário</label>
-                <input type="text" id="usuario" class="w-96 px-3 py-1 border rounded-md bg-white"><br>
-                </div>
-                {{!-- senha --}}
-                <div class="mb-4">
-                <label for="senha" class="block text-white">Senha</label>
-                <input type="text" id="senha" class="w-64 px-3 py-1 border rounded-md bg-white"><br>
-                </div>
-                <a href="" class="border-b">Não possui cadastro?</a>
+                <input type="text" id="usuario" class="w-96 px-3 py-1 border rounded-md bg-white text-black"><br>
             </div>
-            <button type="submit" class="bg-colorbutton text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">LOGAR</button>
-            </form>
+            {{!-- senha --}}
+            <div class="mb-4">
+                <label for="senha" class="block text-white">Senha</label>
+                <input type="text" id="senha" class="w-64 px-3 py-1 border rounded-md bg-white text-black"><br>
+            </div>
+            <a href="" class="border-b">Não possui cadastro?</a>
         </div>
-    </main>
-
-    <footer class="bg-orange text-white text-center py-4">
-        <p class="text-white">®Desenvolvido para Estudo</p>
-    </footer>
-</body>
-</html>
+        <button type="submit"
+            class="bg-colorbutton text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">LOGAR</button>
+    </form>
+</div>

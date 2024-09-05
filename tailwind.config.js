@@ -2,10 +2,13 @@
 module.exports = {
   content: ["./views/**/*.{html,js,handlebars}"],
   theme: {
-    colors: {
-      'orange': '#D9843B',
-      'black1' : '#0D0D0D',
-      'colorbutton':'#733C1D',
+    extend: {
+      colors: {
+        'orange': '#D9843B',
+        'black1': '#0D0D0D',
+        'colorbutton': '#733C1D',
+        'white': "#ffffff"
+      },
     },
     width: {
       '125': '48rem',
