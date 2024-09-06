@@ -32,19 +32,23 @@
         </tr>
       </thead>
       <tbody>
+        {{!-- inicio do trecho alterado --}}
+        {{#each pessoas}}
         <tr>
-          <td class="px-6 py-4">João da Silva</td>
-          <td class="px-6 py-4">30</td>
-          <td class="px-6 py-4">Masculino</td>
-          <td class="px-6 py-4">12345-678</td>
-          <td class="px-6 py-4">Av. José Carlos</td>
+          <td class="px-6 py-4">{{nome}}</td>
+          <td class="px-6 py-4">{{idade}}</td>
+          <td class="px-6 py-4">{{sexo}}</td>
+          <td class="px-6 py-4">{{CEP}}</td>
+          <td class="px-6 py-4">{{Endereco}}</td>
           <td class="px-6 py-4">
             <div class="flex space-x-1">
-                <a href="/" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Editar</a>
-                <a href="/" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Excluir</a>
+                <a href="/editar/{{_id}}" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Editar</a>
+                <a href="/excluir/{{_id}}" class="bg-colorbutton hover:bg-blue-700 text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Excluir</a>
             </div>
           </td>
         </tr>
+         {{/each}}
+         {{!-- fim do trecho alterado --}}
       </tbody>
     </table>
   </div>
