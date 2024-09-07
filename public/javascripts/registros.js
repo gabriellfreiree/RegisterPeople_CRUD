@@ -71,7 +71,7 @@ export async function cadastrar(nome, idade, sexo, cep){
 export async function update(id, nome, idade, sexo, cep){
     let body = {
         nome: nome,
-        email: email,
+        idade: idade,
         sexo: sexo,
         cep: cep
     }

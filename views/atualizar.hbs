@@ -1,0 +1,35 @@
+<script type="module" src="/javascripts/atualizar.js"></script>
+<div class="max-w-md mx-auto p-6 rounded-lg shadow-md bg-orange">
+    <h1 class="text-2xl font-bold mb-6">atualizar Pessoal</h1>
+    <form class="bg-range">
+        <div class="mb-4">
+            <div class="mb-4">
+                {{!-- nome --}}
+                <label for="nome" class="block text-white">Nome</label>
+                <input type="text" id="nome" class="w-96 px-3 py-1 border rounded-md bg-white text-black"><br>
+            </div>
+            {{!-- idade --}}
+            <div class="mb-4">
+                <label for="idade" class="block text-white">Idade</label>
+                <input type="text" id="idade" class="w-64 px-3 py-1 border rounded-md bg-white text-black"><br>
+            </div>
+            {{!-- sexo --}}
+            <div class="mb-4">
+                <label for="sexo" class="block text-white">Sexo</label>
+                <select name="sexo" id="sexo" class="w-40 px-3 py-1 border rounded-md bg-white text-black" required>
+                    <option value="">Nenhum</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            {{!-- cep --}}
+            <div class="mb-4">
+                <label for="cep" class="block text-white">CEP</label>
+                <input type="text" id="cep" class="w-64 px-3 py-1 border rounded-md bg-white text-black"><br>
+            </div>
+            {{!-- endereco --}}
+        </div>
+        <button type="button" id="atualizar"
+            class="bg-colorbutton text-white font-bold py-1 px-4 rounded shadow-inner shadow-md">Cadastrar</button>
+    </form>
+</div>

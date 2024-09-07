@@ -6,15 +6,12 @@ export async function isLoged(){
             try{
                 await Auth.refreshToken()
             }catch {
-                alert("Erro ao gerar novo token")
-                //window.location = "/logar"
+                window.location = "/logar"
             }
         }
     }else{
-        alert("Erro ao logar")
         window.location = "/logar"
     }
 }
 
 isLoged()
-

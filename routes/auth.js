@@ -9,7 +9,7 @@ var chavePrivada = fs.readFileSync("keys/chavePrivada.pem")
 var chavePublica = fs.readFileSync("keys/chavePublica.pem")
 
 /* GET home page. */
-router.post('/login', function (req, res, next) {
+router.post('/login', async function (req, res, next) {
 
     client.db("projeto_tap_registro").collection("users").findOne({
         email: req.body.email
@@ -54,12 +54,14 @@ router.post('/login', function (req, res, next) {
                 refreshToken: refreshToken,
                 expiresIn: 7200
             })
-
+            
         }
     }).catch((error) => {
         res.status(500).send({
             msg: "erro: " + error
         })
+
+        //client.close()
     })
 
 });
@@ -90,6 +92,10 @@ router.post('/register', function (req, res, next) {
             })
         }
 
+    }).catch((error) => {
+        res.status(500).send({
+            msg: "erro: " +error
+        })
     })
 
     
